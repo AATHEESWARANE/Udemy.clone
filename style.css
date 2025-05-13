@@ -14,12 +14,33 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
-    
-
-}
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    }
 
 .navbar__title {
     color: #A435F0;
+}
+
+.learn {
+    position: relative;
+    cursor: pointer;
+}
+.learn_1{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+
+.learn:hover .learn_1{
+    display: block;
 }
 
 .navbar__s2 {
@@ -35,8 +56,9 @@ body {
 
 .navbar__s2 input {
     border: none;
-    width: 100%;
+    width: 90%;
     font-size: 16px;
+    background-color: transparent;
 }
 
 
@@ -70,6 +92,20 @@ body {
 
 .back_img img {
     width: 100%;
+    
+}
+.back_img{
+    position: relative;
+}
+
+.back__img{
+    border: solid 2px black;
+    width: 400px;
+    position: absolute;
+    left: 90px;
+    bottom: 220px;
+    padding: 10px;
+    background-color: white;
 }
 
 .recommended {
